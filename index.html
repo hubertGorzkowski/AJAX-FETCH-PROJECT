@@ -8,7 +8,22 @@
     <title>AJAX - Fetch</title>
   </head>
   <body>
-    <button>Pobierz użytkowników</button>
+    <form class="generator">
+      <label class="generator__input-name"
+        >Wybierz płeć
+        <select class="generator__select" name="gender">
+          <option value="both" selected>Wszyscy</option>
+          <option value="female">Kobiety</option>
+          <option value="male">Męzczyźni</option>
+        </select>
+      </label>
+      <label class="generator__input-name"
+        >Liczba osób
+        <input class="generator__input" type="number" value="10">
+        </select>
+      </label>
+      <input class="button" type="submit" value="Pobierz użytkowników">
+    </form>
     <script src="main.js"></script>
   </body>
 </html>
